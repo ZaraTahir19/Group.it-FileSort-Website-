@@ -1,4 +1,4 @@
-# Group.it-FileSort-Website
+# Group.it FileSort Website
 
 Group.it-FileSort-Website is a simple yet powerful web application designed to streamline file management tasks. It offers seamless file uploading, efficient sorting capabilities, and easy access to organized and downloadable zip folders. Built with HTML, CSS, JavaScript, and utilizing the Tailwind CSS framework, Group.it-FileSort-Website provides a user-friendly experience for managing digital files.
 
@@ -10,6 +10,8 @@ Group.it-FileSort-Website is a simple yet powerful web application designed to s
 3. Installation
 4. Usage
 5. Contact
+
+
 
 
 
@@ -32,6 +34,8 @@ Adds styles and visual enhancements to the user interface.
 >Tailwind CSS:
 
 A utility-first CSS framework for rapid UI development.
+
+
 
 
 
@@ -68,6 +72,8 @@ Group.it-FileSort-Website offers the following key features:
 
 
 
+
+
 >>Installation:
 
 To run Group.it-FileSort-Website locally, follow these steps:
@@ -75,14 +81,16 @@ To run Group.it-FileSort-Website locally, follow these steps:
 
 1. Clone the Repository: 
 
-Use the following command to clone the repository to your local machine:
+   Use the following command to clone the repository to your local machine:
 
-git clone https://github.com/your-username/Group.it-FileSort-Website-.git
+git clone https://github.com/ZaraTahir19/Group.it-FileSort-Website-.git
 
 
 2. Open the Application: 
 
-Navigate to the project directory and open the "HomePage.html" file in your preferred web browser.
+   Navigate to the project directory and open the "HomePage.html" file in your preferred web browser.
+
+
 
 
 
@@ -111,6 +119,8 @@ Navigate to the project directory and open the "HomePage.html" file in your pref
    Enjoy a responsive and adaptive layout that adjusts to different screen sizes.
 
    Access all features seamlessly from desktops, tablets, and smartphones.
+
+
 
 
 
