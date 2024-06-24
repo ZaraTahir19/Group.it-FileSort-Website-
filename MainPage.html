@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group.it</title>
+    <link rel="shortcut icon" href="Images/gitIcon.png" type="Images/logo">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 15px;
+
+        }
+
+        ::-webkit-scrollbar-track {
+            background: black;
+        }
+
+        ::-webkit-scrollbar-thumb {
+
+            background: linear-gradient(#fbf1e9, #ff3a04);
+            border-radius: 10px;
+        }
+
+        #folders::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .vertical-scroll {
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .dropzone-hover {
+             background-color:  #fcecec;
+            border-color: #ffa500;
+
+
+        }
+
+       
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 80px;
+            background-color: #000;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .navbar li {
+            padding: 30px 0;
+           
+            text-align: center;
+          
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+       
+
+        .navbar a:hover i {
+            color: #f77002;
+           
+        }
+
+        .content {
+            margin-left: 80px;
+            padding: 20px;
+        }
+
+
+ .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .maincontent {
+            position: relative;
+            z-index: 10;
+        }
+
+        .btn .icon {
+            transform: scale(1.2);
+            transition: transform 0.2s linear, fill 0.2s linear;
+        }
+
+        .btn:hover .icon {
+            transform: scale(1.5);
+        }
+
+        .btn:hover .icon path {
+            fill: rgb(255, 98, 0);
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<video autoplay loop class="video-background" muted plays-inline>
+    <source src="Video/video.mp4" type="video/mp4">
+</video>
+
+
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="HomePage.html" class="text-white" title="Home">
+                    <i class="fas fa-house-user"></i>
+                </a>
+            </li>
+            <li>
+
+
+
+                <a href="#" class="text-white" title="About">
+
+                    <i class="fas fa-info"></i>
+                </a>
+
+            </li>
+            <li>
+
+
+                <a href="#" class="text-white" title="Contact">
+                    <i class="fas fa-address-book"></i>
+
+                </a>
+
+
+            </li>
+
+            <li>
+
+                <a href="#" class="text-white" title="Settings">
+                    <i class="fas fa-cogs"></i>
+                    <i class="fa-sharp fa-light fa-gears"></i>
+                </a>
+
+
+            </li>
+        </ul>
+    </nav>
+    <div class="maincontent flex items-center justify-center min-h-screen">
+        <div class="w-full max-w-md p-10 bg[#f5f5f5] rounded shadow">
+            <h1 class="text-white text-2xl font-bold mb-4">Get Your Files Uploaded here!</h1>
+            <div id="progressContainer" class="hidden mb-4">
+                <div class="flex items-center mb-2">
+                    <div class="w-full h-2 bg-gray-200 rounded mr-2">
+                        <div id="progressBar" class="h-2 bg-red-600 rounded" style="width: 0%"></div>
+                    </div>
+                    <div id="progressText" class="text-sm text-white">0%</div>
+                </div>
+                <div id="fileCount" class="text-xs text-right text-white">Uploading 0/0 file(s)</div>
+            </div>
+            <input type="file" id="fileInput" class="mb-4" multiple hidden>
+            <div id="dropZone" class="border-4 border-dashed border-red-500 rounded p-20 mb-4 text-center text-slate-200">
+                Drag files here or <span class="text-orange-600 text-2xl cursor-pointer" id="browseFiles">browse</span>
+            </div>
+            <div id="folders" class="flex flex-col gap-4 custom-scrollbar max-h-72 overflow-y-auto vertical-scroll">
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        .btn .icon {
+            transform: scale(1.2);
+            transition: transform 0.2s linear, fill 0.2s linear;
+        }
+
+        .btn:hover .icon {
+            transform: scale(1.5);
+        }
+
+        .btn:hover .icon path {
+            fill: rgb(255, 98, 0);
+        }
+    </style>
+
+</body>
+
+</html>
+
+

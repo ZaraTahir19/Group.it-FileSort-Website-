@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group.it</title>
+    <link rel="shortcut icon" href="Images/gitIcon.png" type="Images/logo">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: black;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(#f33906, #fbf1e9);
+            border-radius: 10px;
+        }
+
+      
+        .button-wrapper {
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+            z-index: 1000;
+        }
+
+        .button {
+            display: inline-block;
+            text-align: center;
+            background: #fff;
+            color: #f33906;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.25rem;
+        }
+
+        .button:hover {
+            background: #f33906;
+            color: #fbf1e9;
+            
+        }
+
+        @font-face {
+            font-family: 'MyFont';
+            src: url('Font/Vis-A-Vis.ttf') format('truetype');
+        }
+
+        .custom-font {
+            font-family: 'MyFont', sans-serif;
+        }
+
+        .centered-text {
+            font-family: 'MyFont', sans-serif;
+            font-size: 10em;
+            color: white;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 10;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            background-color: black;
+             padding: 0px 0;
+        }
+
+        .main-content {
+            padding-top:10px;
+           
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+
+    <nav class="navbar">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#">
+                <img src="Images/git.png" alt="Group.it Logo" class="h-16 w-30">
+            </a>
+            <div class="hidden sm:flex space-x-6 text-gray-400 text-xl">
+                <i class="fas fa-house-user p-6" style="color: #f33906;"></i>
+                <a href="#" class="p-6 hover:text-orange-600">About</a>
+                <a href="#" class="p-6 hover:text-orange-600">Contact</a>
+                <a href="#" class="p-6 hover:text-orange-600">Settings</a>
+            </div>
+            <div class="sm:hidden">
+                <i class="fas fa-bars text-white text-3xl "></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="bg-[url('/Images/front_1.jpg')] w-[1000px] h-[3790px] bg-auto"></div>
+        <h2 class="centered-text">Group.It</h2>
+    </div>
+
+    <div class="button-wrapper">
+        <a href="MainPage.html" class="button">Get Started</a>
+    </div>
+
+</body>
+
+</html>
+
+
