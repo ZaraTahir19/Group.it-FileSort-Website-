@@ -1,4 +1,4 @@
-# Group.it FileSort Website
+# Group.it - FileSort Website
 
 Group.it-FileSort-Website is a simple yet powerful web application designed to streamline file management tasks. It offers seamless file uploading, efficient sorting capabilities, and easy access to organized and downloadable zip folders. Built with HTML, CSS, JavaScript, and utilizing the Tailwind CSS framework, Group.it-FileSort-Website provides a user-friendly experience for managing digital files.
 
