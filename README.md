@@ -83,7 +83,7 @@ To run Group.it-FileSort-Website locally, follow these steps:
 
    Use the following command to clone the repository to your local machine:
 
-git clone https://github.com/ZaraTahir19/Group.it-FileSort-Website-.git
+git clone https://github.com/Z-zaratahir/Group.it-FileSort-Website-.git
 
 
 2. Open the Application: 
